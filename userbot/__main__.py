@@ -15,7 +15,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("تليثون العرب")
+LOGS = logging.getLogger("عياد ثون")
 
 print(userbot.__copyright__)
 print("المرخصة بموجب شروط " + userbot.__license__)
@@ -23,7 +23,7 @@ print("المرخصة بموجب شروط " + userbot.__license__)
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("بدء تنزيل تليثون العرب")
+    LOGS.info("بدء تنزيل عياد ثون")
     iqthon.loop.run_until_complete(setup_bot())
     LOGS.info("بدء تشغيل البوت")
 except Exception as e:
@@ -48,10 +48,10 @@ async def startup_process():
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖\n")
-    print("حسنا لقد تم تنصيب تليثون العرب بدون مشاكل")
+    print("حسنا لقد تم تنصيب عياد ثون بدون مشاكل")
     print(
         f"⌔︙ا  تهانينا ، اكتب الآن -  .السورس  - لروئيه المعلومات\
-        \nقم بتوجه الى القناه لمعرفه الاوامر وباقي معلومات https://t.me/iqthon"
+        \nقم بتوجه الى القناه لمعرفه الاوامر وباقي معلومات https://t.me/D_G_B"
     )
     print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖")
     await verifyLoggerGroup()
