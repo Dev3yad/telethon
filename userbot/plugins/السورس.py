@@ -51,7 +51,8 @@ async def amireallyalive(event):
         cat_caption += f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ0.0.1  ٍَ❭**\n"
         cat_caption += f"**{EMOJI_TELETHON}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         cat_caption += f"**{EMOJI_TELETHON} ❬ ِحسـابك  :   {mention}  ٍ**\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة تليـثون  :** @YYYBW  ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @YYYBW  ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @D_G_B  ٍَ❭\n"
         cat_caption += f"**{EMOJI_TELETHON} ❬ ٰمـطور السورس : ** @ahmedyad200 ٍَ❭\n"
         cat_caption += f"———×"
         try:
@@ -72,15 +73,16 @@ async def amireallyalive(event):
             f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ0.0.1  ٍَ❭**\n"
             f"**{EMOJI_TELETHON}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
             f"**{EMOJI_TELETHON} ❬ ِحسـابك  :   {mention}  ٍَ❭**\n"
-            f"**{EMOJI_TELETHON} ❬ ٰقنـاة تليـثون  :** @YYYBW  ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @YYYBW  ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @D_G_B  ٍَ❭\n"
             f"**{EMOJI_TELETHON}** ❬ ٰمـطور السورس : ** @ahmedyad200 ٍَ❭\n"
             f"———×\n"
         )
 
 
 @iqthon.iq_cmd(
-    pattern="ialive$",
-    command=("سورس", plugin_category),
+    pattern="alive$",
+    command=("alive", plugin_category),
     info={
         "header": "To check bot's alive status via inline mode",
         "options": "To show media in this cmd you need to set ALIVE_PIC with media link, get this by replying the media by .tgm",
