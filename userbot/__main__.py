@@ -15,7 +15,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("عياد ثون")
+LOGS = logging.getLogger("تليثون العرب")
 
 print(userbot.__copyright__)
 print("المرخصة بموجب شروط " + userbot.__license__)
@@ -23,7 +23,7 @@ print("المرخصة بموجب شروط " + userbot.__license__)
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("بدء تنزيل عياد ثون")
+    LOGS.info("بدء تنزيل تليثون العرب")
     iqthon.loop.run_until_complete(setup_bot())
     LOGS.info("بدء تشغيل البوت")
 except Exception as e:
