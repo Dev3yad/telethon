@@ -281,7 +281,7 @@ async def upstream(event):
 )
 async def upstream(event):
     event = await edit_or_reply(event, "**⌔︙جـاري تحديث والاسترداد  يرجـى الإنتظـار ↯**")
-    off_repo = "https://github.com/telethon-Arab/teletho-help"
+    off_repo = "https://github.com/Dev3yad/3yad-thon"
     os.chdir("/app")
     try:
         txt = "**⌔︙ عـذرًا، لا يمڪـن لبرنامـج التحديـث المتابعـة بسـبب ϟ**"
