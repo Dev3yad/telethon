@@ -40,7 +40,7 @@ async def amireallyalive(event):
     uptime = await get_readable_time((time.time() - StartTime))
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI_TELETHON = gvarstatus("ALIVE_EMOJI") or " ٍَ 🖤"
-    IQTHON_ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "❬ تـليثون العـرب - Telethon-Arabe ، 🕸  ❭"
+    IQTHON_ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "❬ عـياد ثـون - 3yad-thon ، 🕸  ❭"
     IQTHON_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/17f2ad9df0b5aeed779d1.mp4"
     if IQTHON_IMG:
         CAT = [x for x in IQTHON_IMG.split()]
@@ -48,11 +48,11 @@ async def amireallyalive(event):
         PIC = random.choice(A_IMG)
         cat_caption = f"**{IQTHON_ALIVE_TEXT}**\n"
         cat_caption += f"———×\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ5.0.1  ٍَ❭**\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ0.0.1  ٍَ❭**\n"
         cat_caption += f"**{EMOJI_TELETHON}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         cat_caption += f"**{EMOJI_TELETHON} ❬ ِحسـابك  :   {mention}  ٍ**\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة تليـثون  :** @YYYBW  ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰمـطور السورس : ** @ahmedyad200 ٍَ❭\n"
         cat_caption += f"———×"
         try:
             await event.client.send_file(
@@ -69,11 +69,11 @@ async def amireallyalive(event):
             event,
             f"**{IQTHON_ALIVE_TEXT}**\n\n"
             f"**———×**\n"
-            f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ5.0.0  ٍَ❭**\n"
+            f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ0.0.1  ٍَ❭**\n"
             f"**{EMOJI_TELETHON}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
             f"**{EMOJI_TELETHON} ❬ ِحسـابك  :   {mention}  ٍَ❭**\n"
-            f"**{EMOJI_TELETHON} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
-            f"**{EMOJI_TELETHON}** ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ ٰقنـاة تليـثون  :** @YYYBW  ٍَ❭\n"
+            f"**{EMOJI_TELETHON}** ❬ ٰمـطور السورس : ** @ahmedyad200 ٍَ❭\n"
             f"———×\n"
         )
 
