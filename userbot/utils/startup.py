@@ -63,8 +63,7 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await iqthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "
-https://telegra.ph/file/045c8e02646c947da2fbb.jpg",
+                "https://telegra.ph/file/045c8e02646c947da2fbb.jpg",
                 caption="**⌔︙ اهلا وسهلا لقد قمت بتنصيب عياد ثون\n لـ قنـاه السـورس @D_G_B\nلـ أوامـر السورس @YYYBW **",
                 buttons=[(Button.url("مطـور السورس", "https://t.me/ahmedyad200"),)],
             )
