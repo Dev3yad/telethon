@@ -24,13 +24,13 @@ plugin_category = "utils"
 
 
 @iqthon.iq_cmd(
-    pattern="(السورس|alive)$",
-    command=("(السورس|alive)", plugin_category),
+    pattern="(السورس|سورس)$",
+    command=("(السورس|سورس)", plugin_category),
     info={
         "header": "To check bot's alive status",
         "options": "To show media in this cmd you need to set ALIVE_PIC with media link, get this by replying the media by .tgm",
         "usage": [
-            "{tr}(السورس|alive)",
+            "{tr}(السورس|سورس)",
         ],
     },
 )
@@ -48,12 +48,13 @@ async def amireallyalive(event):
         PIC = random.choice(A_IMG)
         cat_caption = f"**{IQTHON_ALIVE_TEXT}**\n"
         cat_caption += f"———×\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ0.0.1  ٍَ❭**\n"
-        cat_caption += f"**{EMOJI_TELETHON}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ِحسـابك  :   {mention}  ٍ**\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @YYYBW  ٍَ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @D_G_B  ٍَ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰمـطور السورس : ** @ahmedyad200 ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ أصدار النسخـة  :** ِ0.0.1 ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ مـدة الـتشغيل  :** {uptime} ٍَ❭**\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ حسـابك  :** {mention} ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ قنـاة الـسـورس  :** @YYYBW ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @D_G_B ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ مـطور السورس  :** @ahmedyad200 ٍَ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ مـطور السورس  :** @de_vi_d ٍَ❭\n"
         cat_caption += f"———×"
         try:
             await event.client.send_file(
@@ -70,39 +71,40 @@ async def amireallyalive(event):
             event,
             f"**{IQTHON_ALIVE_TEXT}**\n\n"
             f"**———×**\n"
-            f"**{EMOJI_TELETHON} ❬ ٍَ أصدار النسخـة :  ِ0.0.1  ٍَ❭**\n"
-            f"**{EMOJI_TELETHON}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
-            f"**{EMOJI_TELETHON} ❬ ِحسـابك  :   {mention}  ٍَ❭**\n"
-            f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @YYYBW  ٍَ❭\n"
-            f"**{EMOJI_TELETHON} ❬ ٰقنـاة الـسـورس  :** @D_G_B  ٍَ❭\n"
-            f"**{EMOJI_TELETHON}** ❬ ٰمـطور السورس : ** @ahmedyad200 ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ أصدار النسخـة  :** ِ0.0.1 ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ مـدة الـتشغيل  :** {uptime} ٍَ❭**\n"
+            f"**{EMOJI_TELETHON} ❬ حسـابك  :** {mention} ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ قنـاة الـسـورس  :** @YYYBW ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ قنـاة الـسـورس  :** @D_G_B ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ مـطور السورس  :** @ahmedyad200 ٍَ❭\n"
+            f"**{EMOJI_TELETHON} ❬ مـطور السورس  :** @de_vi_d ٍَ❭\n"
             f"———×\n"
         )
 
 
-@iqthon.iq_cmd(
-    pattern="alive$",
-    command=("alive", plugin_category),
-    info={
-        "header": "To check bot's alive status via inline mode",
-        "options": "To show media in this cmd you need to set ALIVE_PIC with media link, get this by replying the media by .tgm",
-        "usage": [
-            "{tr}alive",
-        ],
-    },
-)
-async def amireallyalive(event):
-    "A kind of showing bot details by your inline bot"
-    reply_to_id = await reply_id(event)
-    EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
-    cat_caption = f"**Catuserbot is Up and Running**\n"
-    cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
-    cat_caption += f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
-    cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
-    cat_caption += f"**{EMOJI} Master:** {mention}\n"
-    results = await event.client.inline_query(Config.TG_BOT_USERNAME, cat_caption)
-    await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)
-    await event.delete()
+# @iqthon.iq_cmd(
+    # pattern="alive$",
+    # command=("alive", plugin_category),
+    # info={
+        # "header": "To check bot's alive status via inline mode",
+        # "options": "To show media in this cmd you need to set ALIVE_PIC with media link, get this by replying the media by .tgm",
+        # "usage": [
+            # "{tr}alive",
+        # ],
+    # },
+# )
+# async def amireallyalive(event):
+    # "A kind of showing bot details by your inline bot"
+    # reply_to_id = await reply_id(event)
+    # EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
+    # cat_caption = f"**Catuserbot is Up and Running**\n"
+    # cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
+    # cat_caption += f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
+    # cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
+    # cat_caption += f"**{EMOJI} Master:** {mention}\n"
+    # results = await event.client.inline_query(Config.TG_BOT_USERNAME, cat_caption)
+    # await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)
+    # await event.delete()
 
 
 @iqthon.tgbot.on(CallbackQuery(data=re.compile(b"stats")))
