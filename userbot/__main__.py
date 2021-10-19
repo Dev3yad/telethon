@@ -18,14 +18,12 @@ from .utils import (
 LOGS = logging.getLogger("عياد ثون")
 
 print(userbot.__copyright__)
-print("المرخصة بموجب شروط " + userbot.__license__)
 
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("بدء تشغيل الملفات")
+    LOGS.info("جاري قرائة الملفات")
     iqthon.loop.run_until_complete(setup_bot())
-    LOGS.info("بدء تشغيل البوت")
 except Exception as e:
     LOGS.error(f"{str(e)}")
     sys.exit()
@@ -45,14 +43,12 @@ async def startup_process():
         Catcheck.sucess = False
         return
     await verifyLoggerGroup()
+    print("بدء تحميل الملفات")
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖\n")
     print("حسنا لقد تم تنصيب عياد ثون بدون مشاكل")
-    print(
-         f"⌔︙ا تهانينا ، اكتب الآن - .السورس - لروئيه المعلومات\
-         \nقم بتوجه الى القناه لمعرفه الاوامر وباقي معلومات https://t.me/D_G_B"
-         )
+    print("⌔︙ تهانينا ، اكتب الآن - .السورس - لروئيه المعلومات")
     print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
