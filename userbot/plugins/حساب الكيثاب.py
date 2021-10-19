@@ -22,20 +22,20 @@ GIT_TEMP_DIR = "./temp/"
 
 
 @iqthon.iq_cmd(
-    pattern="رابط تنصيب$",
-    command=("رابط تنصيب", plugin_category),
+    pattern="رابط تنصيب|رابط السورس$",
+    command=("رابط تنصيب|رابط السورس", plugin_category),
     info={
-        "header": "رابط تنصيب",
+        "header": "رابط تنصيب|رابط السورس",
         "usage": [
-            "{tr}رابط تنصيب",
+            "{tr}رابط تنصيب|رابط السورس",
         ],
     },
 )
 async def source(e):
-    "رابط تنصيب"
+    "رابط تنصيب|رابط السورس"
     await edit_or_reply(
         e,
-        "رابط تنصيب تليثون العرب [هنا رابط](https://heroku.com/deploy?template=https://github.com/klanrali/Telethon-Arab-helper)",
+        "رابط تنصيب عياد ثون [هنا رابط](https://heroku.com/deploy?template=https://github.com/Dev3yad/3yad-thon)",
     )
 
 
