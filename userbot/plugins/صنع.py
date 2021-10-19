@@ -12,7 +12,7 @@ plugin_category = "tools"
     pattern="صنع (مجموعه خارقه|مجموعه عاديه|قناه) ([\s\S]*)",
     command=("صنع", plugin_category),
     info={
-        "header": "⌔︙لإنشاء مجموعة خاصة/قناة مع تليثون العرب  ☸️",
+        "header": "⌔︙لإنشاء مجموعة خاصة/قناة مع عياد ثون ☸️",
         "description": "⌔︙إستخدام سمد لإنشاء مجموعة خارقة، مجموعة عادية أو قناة  ⚜️",
         "flags": {
             "مجموعه خارقه": "⌔︙لإنشاء مجموعة خارقة خاصة",
@@ -28,9 +28,9 @@ async def _(event):
     type_of_group = event.pattern_match.group(1)
     group_name = event.pattern_match.group(2)
     if type_of_group == "قناه":
-        descript = "⌔︙ هذه قناة إختبار أُنشئت بإستعمال تليثون العرب"
+        descript = "⌔︙ هذه قناة إختبار أُنشئت بإستعمال عياد ثون"
     else:
-        descript = "⌔︙ هذه المجموعه إختبار أُنشئت بإستعمال تليثون العرب"
+        descript = "⌔︙ هذه المجموعه إختبار أُنشئت بإستعمال عياد ثون"
     if type_of_group == "مجموعه خارقه":
         try:
             result = await event.client(
