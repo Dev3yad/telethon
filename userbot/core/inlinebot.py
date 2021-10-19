@@ -54,8 +54,8 @@ def ibuild_keyboard(buttons):
 
 def main_menu():
     print(GRP_INFO)
-    text = f"تليثون العرب\
-        \nللأوامر {mention}"
+    text = f"عياد ثون\
+        \nاوامر {mention}"
     buttons = [
         (
             Button.inline(
@@ -390,7 +390,7 @@ async def inline_handler(event):  # sourcery no-metrics
                     ),
                 ],
                 [   
-                    Button.url("رابط السورس", "https://github.com/klanrali/Telethon-Arab"
+                    Button.url("رابط السورس", "https://github.com/Dev3yad/3yad-thon"
                     ),
                 ],
                 [   
@@ -412,8 +412,8 @@ async def inline_handler(event):  # sourcery no-metrics
         elif string == "help":
             _result = main_menu()
             result = builder.article(
-                title="© iqthon Help",
-                description="Help menu for iqthon",
+                title="© Help",
+                description="Help menu",
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
