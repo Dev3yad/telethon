@@ -39,8 +39,8 @@ async def amireallyalive(event):
     reply_to_id = await reply_id(event)
     uptime = await get_readable_time((time.time() - StartTime))
     _, check_sgnirts = check_data_base_heal_th()
-    EMOJI_TELETHON = gvarstatus("ALIVE_EMOJI") or " ٍَ 🖤"
-    IQTHON_ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "❬ عـياد ثـون - 3yad-thon ، 🕸  ❭"
+    EMOJI_TELETHON = gvarstatus("ALIVE_EMOJI") or "🖤"
+    IQTHON_ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "❬ عـياد ثـون - 3yad-thon ❭"
     IQTHON_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/17f2ad9df0b5aeed779d1.mp4"
     if IQTHON_IMG:
         CAT = [x for x in IQTHON_IMG.split()]
@@ -48,13 +48,13 @@ async def amireallyalive(event):
         PIC = random.choice(A_IMG)
         cat_caption = f"**{IQTHON_ALIVE_TEXT}**\n"
         cat_caption += f"———×\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ أصدار النسخـة  :** ِ0.0.1 ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ مـدة الـتشغيل  :** {uptime} ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ حسـابك  :** {mention} ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ قنـاة الـسـورس  :** @YYYBW ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ قنـاة الـسـورس  :** @D_G_B ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ مـطور السورس  :** @ahmedyad200 ❭\n"
-        cat_caption += f"**{EMOJI_TELETHON} ❬ مـطور السورس  :** @de_vi_d ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ أصدار النسخـة :** ِ0.0.1 ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ مـدة الـتشغيل :** {uptime} ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ حسـابك :** {mention} ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ قنـاة الـسـورس :** @YYYBW ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ قنـاة الـسـورس :** @D_G_B ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ مـطور السورس :** @ahmedyad200 ❭\n"
+        cat_caption += f"**{EMOJI_TELETHON} ❬ مـطور السورس :** @de_vi_d ❭\n"
         cat_caption += f"———×"
         try:
             await event.client.send_file(
