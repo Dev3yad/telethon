@@ -14,14 +14,14 @@ __copyright__ = "3yad thon (C) 2020 - 2021  " + __author__
 
 iqthon.version = __version__
 iqthon.tgbot.version = __version__
-LOGS = logging.getLogger("IQTHON")
+LOGS = logging.getLogger("D_G_B")
 bot = iqthon
 
 StartTime = time.time()
 catversion = "1.0.0"
 
-if Config.UPSTREAM_REPO == "Telethon-Araab":
-    UPSTREAM_REPO_URL = "https://github.com/telethontesthelp/Telethon-arabb"
+if Config.UPSTREAM_REPO == "3yad-thoon":
+    UPSTREAM_REPO_URL = "https://github.com/Dev3yad/telethon"
 elif Config.UPSTREAM_REPO == "goodcat":
     UPSTREAM_REPO_URL = "https://github.com/sandy1709/catuserbot"
 else:
