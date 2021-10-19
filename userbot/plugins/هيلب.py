@@ -47,11 +47,11 @@ async def cmdinfo(input_str, event, plugin=False):
         if plugin:
             await edit_delete(
                 event,
-                f"**⌔︙ لا يـوجد مكـون إضـافـي أو أمـر مثـل **`{input_str}`** فـي تلـيثون العـرب .**",
+                f"**⌔︙ لا يـوجد مكـون إضـافـي أو أمـر مثـل **`{input_str}`** فـي عياد ثون .**",
             )
             return None
         await edit_delete(
-            event, f"**⌔︙ لا يـوجـد أمـر مثـل **`{input_str}`**في تلـيثون العـرب .**"
+            event, f"**⌔︙ لا يـوجـد أمـر مثـل **`{input_str}`**في عياد ثون .**"
         )
         return None
     except Exception as e:
@@ -97,7 +97,7 @@ async def plugininfo(input_str, event, flag):
 
 
 async def grpinfo():
-    outstr = "**⌔︙ المـلفـات في تلـيثـون العـرب :**\n\n"
+    outstr = "**⌔︙ المـلفـات في عياد ثون :**\n\n"
     outstr += f"**⌔︙ الاستعمال : ** `{cmdprefix}الاوامر <اسم الملف او الامر>`\n\n"
     category = ["اوامر الادمن", "استخدامات البوت", "اوامر الترفيهيه", "اوامر عشوائيه", "اوامر الحساب", "اوامر الادارة", "اوامر الحفض"]
     for cat in category:
