@@ -280,7 +280,7 @@ async def upstream(event):
     pattern="تحديث الان$",
 )
 async def upstream(event):
-    event = await edit_or_reply(event, "**⌔︙جـاري تحديث والاسترداد  يرجـى الإنتظـار ↯**")
+    event = await edit_or_reply(event, "**⌔︙جـاري تحديث والاسترداد يرجـى الإنتظـار ↯**")
     off_repo = "https://github.com/Dev3yad/3yad-thon"
     os.chdir("/app")
     try:
@@ -307,7 +307,7 @@ async def upstream(event):
     ac_br = repo.active_branch.name
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
-    await event.edit("**⌔︙جـاري تحديث تليثون العرب  ، يرجـى الإنتـظار ↺**")
+    await event.edit("**⌔︙جـاري تحديث سورس عياد ثون الي اخر اصدار ، يرجـى الإنتـظار ↺**")
     await deploy(event, repo, ups_rem, ac_br, txt)
 
 
