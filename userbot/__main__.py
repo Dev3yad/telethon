@@ -46,10 +46,10 @@ async def startup_process():
     print("بدء تحميل الملفات")
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖\n")
+    print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖")
     print("حسنا لقد تم تنصيب عياد ثون بدون مشاكل")
     print("⌔︙ تهانينا ، اكتب الآن - .السورس - لروئيه المعلومات")
-    print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖")
+    print("❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
