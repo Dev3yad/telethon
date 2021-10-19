@@ -110,7 +110,7 @@ async def grpinfo():
 
 
 async def cmdlist():
-    outstr = "**⌔︙ القائمة الإجمالية للأوامر في تليثون العرب :**\n\n"
+    outstr = "**⌔︙ القائمة الإجمالية للأوامر في عياد ثون :**\n\n"
     category = ["اوامر الادمن", "استخدامات البوت", "اوامر الترفيهيه", "اوامر عشوائيه", "اوامر الحساب", "اوامر الادارة", "اوامر الحفض"]
     for cat in category:
         plugins = GRP_INFO[cat]
@@ -197,7 +197,7 @@ async def _(event):
             outstr += f"  - `{cmdprefix}{cmd}`\n"
         outstr += f"**⌔︙ الاستعمال : ** `{cmdprefix}الاوامر -c <اسم الامر>`"
     await edit_or_reply(
-        event, outstr, aslink=True, linktext="**⌔︙ جميع الاوامر في تليثون العرب ** :"
+        event, outstr, aslink=True, linktext="**⌔︙ جميع الاوامر في عياد ثون ** :"
     )
 
 

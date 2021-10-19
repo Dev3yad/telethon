@@ -412,7 +412,7 @@ async def _(event):
     if not current_db_locks:
         res = "⌔︙ ע ﺗـوجــد مــ؏ـلــومــٱت ڪـافـيــة ﭬــي ٱلــډرډﺷــة ⚜️"
     else:
-        res = "⌔︙ مـلـف الٱوامــر مـقـدم مـن  تليثون العرب: \n"
+        res = "⌔︙ مـلـف الٱوامــر مـقـدم مـن عياد ثون: \n"
         ubots = "❌" if current_db_locks.bots else "✅"
         ucommands = "❌" if current_db_locks.commands else "✅"
         uemail = "❌" if current_db_locks.email else "✅"
