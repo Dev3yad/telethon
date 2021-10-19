@@ -65,7 +65,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/045c8e02646c947da2fbb.jpg",
                 caption="**⌔︙ اهلا وسهلا لقد قمت بتنصيب عياد ثون\n لـ قنـاه السـورس @D_G_B\nلـ أوامـر السورس @YYYBW **",
-                buttons=[(Button.url("مطـور السورس", "https://t.me/ahmedyad200"),)],
+                buttons=[(Button.url("مطـور السورس", "https://t.me/ahmedyad200"),)(Button.url("مطـور السورس", "https://t.me/de_vi_d"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -81,7 +81,7 @@ async def startupmessage():
         if msg_details:
             await iqthon.check_testcases()
             message = await iqthon.get_messages(msg_details[0], ids=msg_details[1])
-            text = message.text + "\n\n**⌔︙ اهلا وسهلا لقد قمت باعاده تشغيل تليثون العرب تمت بنجاح**"
+            text = message.text + "\n\n**⌔︙ اهلا وسهلا لقد قمت باعاده تشغيل بوت عياد ثون بنجاح**"
             await iqthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await iqthon.send_message(
